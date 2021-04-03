@@ -31,7 +31,7 @@ Fourth, in peer_name '#' are substitued to '@'. (Not applied to appending of '#%
 
 Clone GitHub Repository
 
-     git clone --recursive https://github.com/TehDmitry/tg.git && cd tg
+     git clone --recursive https://github.com/SegFault42/tg-cli.git && cd tg-cli
 
 ### Python Support
 
@@ -87,10 +87,12 @@ The client depends on [readline library](http://cnswww.cns.cwru.edu/php/chet/rea
 
 If using [Homebrew](http://brew.sh/):
 
+⚠️  Replace readline folder version with your current version
+
      brew install libconfig readline lua python libevent jansson
-     export CFLAGS="-I/usr/local/include -I/usr/local/Cellar/readline/6.3.8/include"
-     export LDFLAGS="-L/usr/local/lib -L/usr/local/Cellar/readline/6.3.8/lib"
-     ./configure && make
+     export CFLAGS="-I/usr/local/include -I/usr/local/Cellar/readline/8.1/include"
+     export LDFLAGS="-L/usr/local/lib -L/usr/local/Cellar/readline/8.1/lib"
+     ./configure --disable-openssl && make
 
 Thanks to [@jfontan](https://github.com/vysheng/tg/issues/3#issuecomment-28293731) for this solution.
 
