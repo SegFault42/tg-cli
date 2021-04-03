@@ -72,7 +72,7 @@
 #include <tgl/tgl-timers.h>
 #include <tgl/tgl-queries.h>
 
-#include <openssl/sha.h>
+/*#include <openssl/sha.h>*/
 
 int verbosity;
 extern int readline_disabled;

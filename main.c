@@ -901,7 +901,7 @@ int main (int argc, char **argv) {
   signal (SIGTERM, sig_term_handler);
   signal (SIGINT, sig_term_handler);
 
-  rl_catch_signals = 0;
+  /*rl_catch_signals = 0;*/
 
 
   log_level = 10;

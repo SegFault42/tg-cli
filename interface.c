@@ -4467,7 +4467,7 @@ void play_sound (void) {
 void set_interface_callbacks (void) {
   if (readline_disabled) { return; }
   readline_active = 1;
-  rl_filename_quote_characters = strdup (" ");
+  /*rl_filename_quote_characters = strdup (" ");*/
   rl_basic_word_break_characters = strdup (" ");
   
   
